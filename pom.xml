@@ -14,7 +14,7 @@
   <name>Azure Spring admin</name>
   <description>Azure Spring admin</description>
   <properties>
-    <java.version>11</java.version>
+    <java.version>8</java.version>
     <spring-boot-admin.version>2.7.4</spring-boot-admin.version>
   </properties>
   <dependencies>
