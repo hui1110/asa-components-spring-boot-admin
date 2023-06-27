@@ -25,7 +25,7 @@ You can quickly deploy your application to Azure Spring Apps by clicking the but
 
 After successful deployment, you can see the following page.
 
-![image](https://github.com/hui1110/azure-spring-admin/assets/58474919/3404d45f-32d4-42a1-93b8-0f38deb0bc94)
+![image](https://github.com/hui1110/azure-spring-admin/assets/58474919/2f03a0d8-4fd3-40cb-9973-e9f7638967d1)
 
 **Test**
 
