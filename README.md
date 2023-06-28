@@ -27,7 +27,7 @@ After successful deployment, you can see the following page.
 
 ![image](https://github.com/hui1110/azure-spring-admin/assets/58474919/3404d45f-32d4-42a1-93b8-0f38deb0bc94)
 
-**Test**
+**Verify This Sample**
 
 You can now access the admin server UI via the `Access the app` button as shown below:
 
