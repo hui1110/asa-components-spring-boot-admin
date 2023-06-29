@@ -4,7 +4,7 @@
 
 Spring Boot Admin Server is an application for managing and monitoring microservice applications.
 
-This quickstart shows you how to quickly deploy Spring Boot Admin Server to Azure Spring Apps using the `Azure Spring Apps button`.
+This quickstart shows you how to quickly deploy Spring Boot Admin Server to Azure Spring Apps using the [Azure Spring Apps button](https://hui1110.github.io/NubesGen/asa-button/overview/).
 
 ## Getting Started
 
@@ -33,9 +33,8 @@ You can now access the admin server UI via the `Access the app` button as shown 
 
 ![image](https://github.com/hui1110/azure-spring-admin/assets/58474919/90c4096e-868d-4801-a46a-d46f6bfee447)
 
-## Contribute
+## Next step
 
 For more detailed information see the following documents:
 
-- [Azure Spring Apps Button overview](https://hui1110.github.io/NubesGen/asa-button/overview/)
-- [Azure Spring Apps Button quick start](https://hui1110.github.io/NubesGen/asa-button/quick-start/)
+- [Create a Deploy to Azure Spring Apps Button](https://hui1110.github.io/NubesGen/asa-button/quick-start/)
