@@ -8,16 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableAdminServer
-@RestController
 public class ASAComponentSpringBootAdminApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ASAComponentSpringBootAdminApplication.class, args);
-    }
-
-    @GetMapping("/hello")
-    public String hello() {
-        return "Hello World!";
     }
 
 }
