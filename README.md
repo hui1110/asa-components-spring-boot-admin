@@ -19,7 +19,7 @@ You can deploy this sample to Azure Spring Apps using the `Azure Spring Apps but
 
 You can quickly deploy your application to Azure Spring Apps by clicking the button below.
 
-<a href="http://localhost:8080/deploy.html?url=https://github.com/hui1110/azure-spring-admin" data-linktype="external">
+<a href="https://yonghui-dev-deploy-apps-webapp.azuremicroservices.io/deploy.html?url=https://github.com/hui1110/azure-spring-admin" data-linktype="external">
     <img src="https://user-images.githubusercontent.com/58474919/236122963-8c0857bb-3822-4485-892a-445fa33f1612.png" alt="Deploy to Azure" width="200px" data-linktype="relative-path">
 </a>
 
