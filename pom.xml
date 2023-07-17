@@ -11,7 +11,7 @@
   <groupId>com.azure.spring</groupId>
   <artifactId>asa-components-spring-boot-admin</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>ASA component Spring Boot Admin</name>
+  <name>ASA component Spring Boot Admin Demo</name>
   <description>Use the ASA button to deploy the ASA component Spring Boot Admin example</description>
   <properties>
     <java.version>17</java.version>
