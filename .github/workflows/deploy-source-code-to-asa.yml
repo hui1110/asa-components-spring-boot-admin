@@ -7,7 +7,7 @@ on:
     paths:
       - '**'
       - '.github/workflows/deploy-source-code-to-asa.yml'
-    workflow_dispatch:
+  workflow_dispatch:
 
 env:
   ASC_PACKAGE_PATH: ${{ github.workspace }}
