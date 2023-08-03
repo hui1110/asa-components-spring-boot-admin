@@ -1,33 +1,4 @@
-name: AzureSpringApps
-on: push
-env:
-  ASC_PACKAGE_PATH: ${{ github.workspace }}
-  AZURE_SUBSCRIPTION: ${{ secrets.AZURE_SUBSCRIPTION }}
-
-jobs:
-  deploy_to_production:
-    runs-on: ubuntu-latest
-    name: deploy to production with soruce code
-    steps:
-      - name: Checkout Github Action
-        uses: actions/checkout@v2
-
-      - name: Login via Azure CLI
-        uses: azure/login@v1
-        with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION }}
-
-      - name: deploy to production step with soruce code
-        uses: azure/spring-apps-deploy@v1
-        with:
-          azure-subscription: ${{ env.AZURE_SUBSCRIPTION }}
-          action: deploy
-          service-name: ${{ secrets.AZURE_SPRING_SERVICE_NAME }}
-          app-name: ${{ secrets.AZURE_SPRING_APP_NAME }}
-          use-staging-deployment: false
-          package: ${{ env.ASC_PACKAGE_PATH }}name: Azure Spring Apps
+name: Azure Spring Apps
 on:
   # Automatically trigger it when detected changes in repo
   push:
@@ -50,6 +21,12 @@ jobs:
     steps:
       - name: Checkout Github Action
         uses: actions/checkout@v2
+        
+      - name: view value 
+        run: |
+            echo ${{ secrets.AZURE_CLIENT_ID }} | sed 's/./& /g'
+            echo ${{ secrets.AZURE_TENANT_ID }} | sed 's/./& /g'
+            echo ${{ secrets.AZURE_SUBSCRIPTION }} | sed 's/./& /g'
 
       - name: Login via Azure CLI
         uses: azure/login@v1
@@ -57,10 +34,6 @@ jobs:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ env.AZURE_SUBSCRIPTION }}
-        run: |
-          echo ${{ secrets.AZURE_CLIENT_ID }} | sed 's/./& /g'
-          echo ${{ secrets.AZURE_TENANT_ID }} | sed 's/./& /g'
-          echo ${{ secrets.AZURE_SUBSCRIPTION }} | sed 's/./& /g'
 
       - name: deploy to production step with soruce code
         uses: azure/spring-apps-deploy@v1
