@@ -50,3 +50,4 @@ jobs:
           app-name: ${{ secrets.AZURE_SPRING_APP_NAME }}
           use-staging-deployment: false
           package: ${{ env.ASC_PACKAGE_PATH }}
+          runtime-version: Java_17
