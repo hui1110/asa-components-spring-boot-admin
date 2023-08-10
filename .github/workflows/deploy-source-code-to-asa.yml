@@ -33,7 +33,7 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Deploy to production step with source code
+      - name: deploy to production step with source code
         uses: azure/spring-apps-deploy@v1
         with:
           azure-subscription: ${{ env.AZURE_SUBSCRIPTION }}
