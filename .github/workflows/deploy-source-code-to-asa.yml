@@ -43,4 +43,4 @@ jobs:
           use-staging-deployment: false
           package: ${{ env.ASC_PACKAGE_PATH }}
           runtime-version: Java_17
-          target-module: 00
+          target-module: 
